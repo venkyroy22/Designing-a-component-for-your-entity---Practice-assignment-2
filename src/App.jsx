@@ -10,12 +10,12 @@ function App() {
   const gridStyle = {
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
-    gap: '16px',
+    gap: '32px',
     padding: '16px',
   };
 
   return (
-    <div style={gridStyle}>
+    <div style={gridStyle} >
       {cards.map((_, index) => (
         <Productcard key={index} />
       ))}
